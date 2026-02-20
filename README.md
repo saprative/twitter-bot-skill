@@ -1,12 +1,11 @@
 # TweetClaw Skill for OpenClaw
 
-A simple Node.js-based skill that allows an OpenClaw agent to post tweets using the Twitter API v2.
+A Node.js-based skill that allows an OpenClaw agent to post tweets using the Twitter API v2. It includes a built-in CLI setup wizard for easy authentication.
 
 ## Requirements
 
 *   **Node.js**
 *   **Twitter Developer Account** (API Key, API Secret)
-*   **OpenClaw** (Agent Framework)
 
 ## Installation
 
@@ -15,21 +14,18 @@ A simple Node.js-based skill that allows an OpenClaw agent to post tweets using 
     ```bash
     pnpm install
     ```
-3.  Configure API credentials in `.env` (copy from `.env.example`):
-    ```bash
-    TWITTER_API_KEY=your_key
-    TWITTER_API_SECRET=your_secret
-    ```
-4.  Run the CLI login script to authorize your account:
+3.  Run the CLI setup wizard:
     ```bash
     node scripts/login.js
     ```
-    This will generate the Access Token and Secret for you.
+    This script will guide you through:
+    *   Setting up your App Keys (if not already set)
+    *   Logging into your Twitter account via browser
+    *   Saving your tokens securely to `.env`
 
 ## Usage
 
-This skill exposes a `post_tweet.js` script that accepts a tweet message as an argument.
-
+### Post a Tweet
 ```bash
 node scripts/post_tweet.js "Hello World from OpenClaw!"
 ```
