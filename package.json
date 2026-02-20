@@ -1,17 +1,21 @@
 {
   "name": "tweetclaw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Twitter CLI bot skill for OpenClaw",
   "main": "index.js",
+  "bin": {
+    "tweetclaw": "./bin/tweetclaw.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "Saprative Jana <saprative@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^17.3.1",
-    "twitter-api-v2": "^1.29.0"
-  }
+    "commander": "^9.0.0",
+    "dotenv": "^16.0.0",
+    "twitter-api-v2": "^1.11.0"
+  },
+  "preferGlobal": true
 }
