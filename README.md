@@ -5,7 +5,7 @@ A simple Node.js-based skill that allows an OpenClaw agent to post tweets using 
 ## Requirements
 
 *   **Node.js**
-*   **Twitter Developer Account** (API Key, Secret, Access Token, Access Secret)
+*   **Twitter Developer Account** (API Key, API Secret)
 *   **OpenClaw** (Agent Framework)
 
 ## Installation
@@ -15,7 +15,16 @@ A simple Node.js-based skill that allows an OpenClaw agent to post tweets using 
     ```bash
     pnpm install
     ```
-3.  Configure credentials in a `.env` file (see `.env.example`).
+3.  Configure API credentials in `.env` (copy from `.env.example`):
+    ```bash
+    TWITTER_API_KEY=your_key
+    TWITTER_API_SECRET=your_secret
+    ```
+4.  Run the CLI login script to authorize your account:
+    ```bash
+    node scripts/login.js
+    ```
+    This will generate the Access Token and Secret for you.
 
 ## Usage
 
