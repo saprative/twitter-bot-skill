@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+.pnpm-debug.log
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# OpenClaw/Local
+tools/
+logs/
+tmp/
