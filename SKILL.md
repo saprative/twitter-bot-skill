@@ -1,9 +1,9 @@
 ---
-name: twitter-bot
+name: tweetclaw
 description: Post tweets and manage Twitter/X account via API v2. Use when the user asks to tweet, post updates, or interact with Twitter.
 ---
 
-# Twitter Bot Skill
+# TweetClaw Skill
 
 This skill allows OpenClaw to post tweets using the Twitter API v2 via a Node.js script.
 
@@ -16,7 +16,7 @@ This skill allows OpenClaw to post tweets using the Twitter API v2 via a Node.js
     *   Access Token
     *   Access Token Secret
 3.  **Configure Environment**:
-    Create a `.env` file in `~/Agents/twitter-bot/.env` with the following content:
+    Create a `.env` file in `~/Agents/tweetclaw/.env` with the following content:
 
     ```bash
     TWITTER_API_KEY=your_api_key
@@ -32,7 +32,7 @@ This skill allows OpenClaw to post tweets using the Twitter API v2 via a Node.js
 To post a tweet, use the provided script:
 
 ```bash
-cd ~/Agents/twitter-bot
+cd ~/Agents/tweetclaw
 node scripts/post_tweet.js "Your tweet text here"
 ```
 

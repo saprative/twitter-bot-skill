@@ -1,4 +1,4 @@
-# Twitter Bot Skill for OpenClaw
+# TweetClaw Skill for OpenClaw
 
 A simple Node.js-based skill that allows an OpenClaw agent to post tweets using the Twitter API v2.
 
